@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeternum | Home</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+</head>
+<body>
+
+    <!-- Menú Superior Fijo Responsive -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <img src="Img/logo.png" alt="Aeternum Logo" class="logo-img">
+            <span class="brand-name">AETERNUM</span>
+        </div>
+        
+        <!-- Botón Hamburguesa (Oculto en PC, Visible en Móvil) -->
+        <button class="menu-toggle" id="mobile-menu-btn">☰</button>
+        
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Categorías ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Ediciones Especiales</a>
+                    <a href="#">Accesorios Personales</a>
+                    <a href="#">Papelería y Detalles</a>
+                    <a href="#">Tecnología y geeks</a>
+                </div>
+            </div>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="encuesta.html">Feedback</a>
+        </nav>
+
+        <!-- Eslogan oculto en móviles para salvar espacio -->
+        <div class="nav-slogan desktop-only">
+            <em>La naturaleza que perdura</em>
+        </div>
+    </header>
+
+    <!-- Carrusel Hero (Animaciones Diagonales) -->
+    <section class="hero-container">
+        <!-- El contenido dinámico se inyectará aquí vía app.js -->
+        <div id="hero-track" class="hero-slide active">
+            <div class="hero-text-block">
+                <h1 id="hero-title">Crea momentos inolvidables</h1>
+                <p id="hero-desc">Descubre nuestros paquetes Aeternum diseñados para sorprender. Personalización y elegancia en pocos clics.</p>
+                <button class="btn-primary">Ver Catálogo</button>
+            </div>
+            <div class="hero-image-block">
+                <img id="hero-img" src="Img/slide1.png" alt="Paquete Aeternum">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenedor Base del Catálogo -->
+    <section id="catalogo-container" class="catalogo-wrapper">
+
+    </section>
+
+    <!-- Footer Principal Aeternum -->
+    <footer class="footer-site">
+        <div class="footer-container">
+            <!-- Grid de 4 Columnas Superior -->
+            <div class="footer-grid">
+                
+                <!-- Columna 1 -->
+                <div class="footer-col">
+                    <h4>Bienvenido</h4>
+                    <ul>
+                        <li><a href="index.html">Visita nuestro catálogo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="footer-col">
+                    <h4>Sobre Nosotros</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Nuestra Historia</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="footer-col">
+                    <h4>Podemos ayudarte</h4>
+                    <ul>
+                        <li><a href="encuesta.html">Dinos tu opinión</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4 -->
+                <div class="footer-col">
+                    <h4>Visitanos</h4>
+                    <ul>
+                        <li><a href="encuesta.html">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Separador sutil -->
+            <div class="footer-divider"></div>
+
+            <!-- Área Central Inferior: Logo y Configuración -->
+            <div class="footer-middle">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Aeternum Logo" onerror="this.onerror=null; this.src='Img/logo.png';">
+                    <span class="footer-brand-name">AETERNUM</span>
+                </div>
+            </div>
+
+            <!-- Legales e Información de Derechos -->
+            <div class="footer-legal">
+                <div class="footer-legal-links">
+                    <a href="#">Condiciones de uso</a>
+                    <a href="#">Aviso de privacidad</a>
+                </div>
+                <p>&copy; 2026, Aeternum Papantla, Inc.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/db.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+</html>
+</body>
+</html>
