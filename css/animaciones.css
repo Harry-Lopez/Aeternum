@@ -1,0 +1,41 @@
+/* ESTADOS DEL CARRUSEL */
+
+/* 1. Cuando la clase es 'active', los elementos entran */
+.hero-slide.active { opacity: 1; z-index: 10; }
+
+.hero-slide.active .hero-text-block {
+    animation: diagonalInText 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+.hero-slide.active .hero-image-block {
+    animation: diagonalInImage 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* 2. Cuando la clase es 'exit', los elementos salen hacia arriba/afuera */
+.hero-slide.exit { opacity: 1; z-index: 9; }
+
+.hero-slide.exit .hero-text-block {
+    animation: fadeOutUp 0.8s forwards;
+}
+.hero-slide.exit .hero-image-block {
+    animation: fadeOutUp 0.8s forwards;
+}
+
+/* KEYFRAMES: LAS RUTAS DE VUELO */
+
+/* Texto entra desde Abajo-Izquierda */
+@keyframes diagonalInText {
+    0% { opacity: 0; transform: translate(-100px, 100px); }
+    100% { opacity: 1; transform: translate(0, 0); }
+}
+
+/* Imagen entra desde Abajo-Derecha */
+@keyframes diagonalInImage {
+    0% { opacity: 0; transform: translate(100px, 100px); }
+    100% { opacity: 1; transform: translate(0, 0); }
+}
+
+/* Salida suave hacia arriba */
+@keyframes fadeOutUp {
+    0% { opacity: 1; transform: translate(0, 0); }
+    100% { opacity: 0; transform: translate(0, -50px); }
+}
