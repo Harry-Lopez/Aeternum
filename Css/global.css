@@ -128,10 +128,45 @@ body { background-color: #FDFBF7; color: #1A3C28; overflow-x: hidden; }
 .card-precio { font-size: 1.3rem; font-weight: 800; color: #1A3C28; margin-bottom: 10px; }
 .card-desc { font-size: 0.85rem; color: #666; margin-bottom: 15px; flex-grow: 1; line-height: 1.4; }
 
-/* La Etiqueta de Categoría que solicitó */
+/* Contenedor Inferior de la Tarjeta */
+.card-footer-flex {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 12px; /* Espaciado limpio entre botón y etiqueta */
+    margin-top: auto; 
+}
+
+/* Botón Comprar en Tarjeta (Maximizado) */
+.btn-comprar {
+    width: 100%; /* Expande el botón en todo el ancho de la tarjeta */
+    background-color: #FFA500;
+    color: #1A3C28;
+    border: none;
+    padding: 10px 14px; /* Mayor área de toque (hitbox) */
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 1rem; /* Texto más prominente */
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s, transform 0.2s;
+    text-align: center;
+}
+
+.btn-comprar:hover {
+    background-color: #FF4500; 
+    color: #FDFBF7;
+    transform: translateY(-2px); /* Elevación sutil en lugar de escalado excesivo */
+}
+
+/* La Etiqueta de Categoría (Se mantiene compacta a la izquierda) */
 .card-tag {
-    align-self: flex-start; padding: 5px 12px; border-radius: 4px;
-    font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;
+    align-self: flex-start; /* Evita que la etiqueta se estire como el botón */
+    padding: 5px 12px; 
+    border-radius: 4px;
+    font-size: 0.75rem; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px;
 }
 
 
